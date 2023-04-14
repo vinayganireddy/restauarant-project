@@ -1,0 +1,31 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    width: 100%;
+    height: 100%;
+}
+#section1
+{
+    background-color: #5f1107;
+    color: white;
+}
+#burgerimg
+{
+    background-image: url(./marquee-resturants.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#chickenbuckets:hover
+{
+  transform: scale(1.03);
+  transition: 1s;
+}
+#chickenbuckets
+{
+   border-radius: 6px ;
+}

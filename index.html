@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./restaurantproject.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+<header class="">
+    <section id="section1" class="container-fluid " style="border-bottom:2px solid gray ;">
+        <section class="row  justify-content-around">
+        <aside class="col col-2 my-auto">
+            <img src="./chuyax_logo-removebg-preview.png" alt="" width="100px" height="100px">
+        </aside>
+         <aside class="col col-4 mx-5 my-auto ">
+            <input type="text" class="form-control" placeholder="search for your favourite..">
+         </aside>
+         <aside class="btn btn-primary col col-1 my-auto" data-bs-target="#ordernow" data-bs-toggle="offcanvas"> Order now</aside>
+           
+            <section class="offcanvas offcanvas-top" id="ordernow">
+                 <section class="offcanvas-header">
+                   <input class="form-control" type="text" placeholder="search for your favourite.">
+                   <aside class="btn btn-close bg-danger" data-bs-dismiss="offcanvas"></aside>
+                 </section>
+                 <section class="offcanvas-body d-flex">
+                    <aside>
+                        <img src="https://s7d1.scene7.com/is/image/mcdonalds/burgers_300x300:menu-category-desktop?op_usm=1.7,1,15,0&resmode=sharp2" alt="">Burgers
+                       </aside>
+                        <aside>
+                            <img src="https://s7d1.scene7.com/is/image/mcdonalds/nav_happy_meal_160x160:menu-category-desktop?op_usm=1.7,1,15,0&resmode=sharp2" alt="">Happy Meal®
+                        </aside>
+                        <aside>
+                            <img src="https://s7d1.scene7.com/is/image/mcdonalds/drinks_300x300:menu-category-desktop?op_usm=1.7,1,15,0&resmode=sharp2" alt="">Beverages
+                        </aside>
+                        <aside>
+                            <img src="https://s7d1.scene7.com/is/image/mcdonalds/breakfast_300x300:menu-category-desktop?op_usm=1.7,1,15,0&resmode=sharp2" alt="">Breakfast
+                           </aside>
+                            <aside>
+                                <img src="https://s7d1.scene7.com/is/image/mcdonalds/snacks_sides_300x300:menu-category-desktop?op_usm=1.7,1,15,0&resmode=sharp2" alt=""> Fries® & Sides
+                            </aside>
+                            <aside>
+                                <img src="https://s7d1.scene7.com/is/image/mcdonalds/desserts_shakes_300x300:menu-category-desktop?op_usm=1.7,1,15,0&resmode=sharp2" alt=""> Sweets & Treats
+                            </aside>
+                 </section>
+
+                 <section class="offcanvas-footer mx-auto">
+                      <aside class="btn btn-warning my-2"> order now</aside>
+                 </section>
+            </section>
+         
+         <aside class="col   my-auto">
+             
+            <section class="btn d-flex align-items-center " data-bs-toggle="modal" data-bs-target="#sign"><ion-icon class="text-light" name="log-in-outline" ></ion-icon> <b class="text-light">Sign in</b> </section> 
+                <section class="modal " id="sign">
+                    <section class="modal-dialog bg-info ">
+                        <section class="modal-header">
+                            <section class="modal-content">
+                             <input class="form-control" type="text" placeholder="e-mail">
+                            </section>
+                            <section class="btn btn-close bg-danger"></section>
+                        </section>
+                        <section class="modal-body">
+                            <section class="modal-content">
+                            <input class="form-control" type="text" placeholder="password">
+                        </section>
+                        </section>
+                        <section class="modal-footer">
+                             <aside class="btn btn-success">SIGN-IN</aside>
+                             <aside class="btn btn-danger">Forget password</aside>
+                        </section>
+                    </section>
+                </section>
+         </aside>
+         <aside class="col  my-auto">
+            <section class="btn d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#aa"> <ion-icon class="text-light" name="fast-food-outline"></ion-icon><b class="text-light">Booking</b></section> 
+            <section class="modal" id="aa">
+                <section class="modal-dialog">
+                    <section class="modal-header">
+                        <section class=" modal-content">
+                            <input type="text" class="form-control" placeholder="search for food">
+                        </section>
+                    </section>
+                     <section class="modal-body">
+                        <img src="https://images.jdmagicbox.com/allahabad/s5/0532px532.x532.190109132336.f5s5/menu/82e8ad1c3cf2faabffd3c084fa2332fe.jpg" alt="" width="">
+                        <img src="https://content.jdmagicbox.com/comp/kadapa/w6/9999p8562.8562.180710211423.h6w6/catalogue/darin-family-restaurant-utukur-kadapa-umqmljrzip.jpg?clr=" alt="">
+                     </section>
+                     <section class="modal-footer">
+                        <aside class="btn btn-warning">Order-now</aside>
+                     </section>
+                </section>
+            </section>
+         </aside>
+        </section>
+    
+    </section>
+
+
+    <section class="container d-flex justify-content-around flex-wrap" style="border-bottom: 2px solid gray;">
+         <section class="btn " data-bs-toggle="offcanvas" data-bs-target="#veg"> <b>MY MENU</b> </section>   
+        <section class="offcanvas offcanvas-start" id="veg">
+            
+                <section class="offcanvas-header bg-info">
+                  <section> <input type="text" class="form-control" placeholder="search...."></section>
+                    <section class="btn btn-close bg-danger" data-bs-dismiss="offcanvas"></section>
+                </section>
+                <section class="offcanvas-body d-flex text-center flex-wrap">
+                    <aside>
+                        <img src="https://s7d1.scene7.com/is/image/mcdonalds/breakfast_300x300:menu-category-desktop?op_usm=1.7,1,15,0&resmode=sharp2" alt="">Breakfast
+                       </aside>
+                        <aside>
+                            <img src="https://s7d1.scene7.com/is/image/mcdonalds/snacks_sides_300x300:menu-category-desktop?op_usm=1.7,1,15,0&resmode=sharp2" alt=""> Fries® & Sides
+                        </aside>
+                        <aside>
+                            <img src="https://s7d1.scene7.com/is/image/mcdonalds/desserts_shakes_300x300:menu-category-desktop?op_usm=1.7,1,15,0&resmode=sharp2" alt=""> Sweets & Treats
+                        </aside>
+                   <aside>
+                    <img src="https://s7d1.scene7.com/is/image/mcdonalds/burgers_300x300:menu-category-desktop?op_usm=1.7,1,15,0&resmode=sharp2" alt="">Burgers
+                   </aside>
+                    <aside>
+                        <img src="https://s7d1.scene7.com/is/image/mcdonalds/nav_happy_meal_160x160:menu-category-desktop?op_usm=1.7,1,15,0&resmode=sharp2" alt="">Happy Meal®
+                    </aside>
+                    <aside>
+                        <img src="https://s7d1.scene7.com/is/image/mcdonalds/drinks_300x300:menu-category-desktop?op_usm=1.7,1,15,0&resmode=sharp2" alt="">Beverages
+                    </aside>
+                    <aside>
+                        <img src="https://s7d1.scene7.com/is/image/mcdonalds/nav_chickenfishsandwiches_160x160:menu-category-desktop?op_usm=1.7,1,15,0&resmode=sharp2" alt="">Chicken & Fish Sandwiches
+                    </aside>
+                    <aside>
+                        <img src="https://s7d1.scene7.com/is/image/mcdonalds/mccafe_300x300:menu-category-desktop?op_usm=1.7,1,15,0&resmode=sharp2" alt="">McCafé® Coffees
+                    </aside>
+                    <aside>
+                        <img src="https://s7d1.scene7.com/is/image/mcdonalds/nav_mcnuggetscombo_160x160:menu-category-desktop?op_usm=1.7,1,15,0&resmode=sharp2" alt="">McNuggets® and Meals
+                    </aside>
+                </section>
+                <section class="offcanvas-footer ">
+                    <section class="btn btn-success mx-auto ">order now</section>
+                </section>
+            </section>
+        
+
+           
+         <section class="btn-group d-flex justify-content-around flex-wrap ">
+
+            <section class="btn  dropdown-toggle" data-bs-toggle="dropdown"> <b>VEG</b> </section>
+               <section class="dropdown-menu">
+                <section class="dropdown-item"><img src="https://i.ndtvimg.com/i/2016-07/tofu-rice-625_625x350_71467969111.jpg" alt="" width="250px"></section>
+                <section class="dropdown-item"><img class="rounded-circle" src="https://www.vegrecipesofindia.com/wp-content/uploads/2020/03/veg-pulao-1a.jpg" alt="" width="50px"> fried rice</section> 
+                <section class="dropdown-item"> brown rice</section>               
+                <section class="dropdown-item">dal khichidi</section>              
+                <section class="dropdown-item">dal fry</section>              
+                <section class="dropdown-item"> veg briyani</section>
+            </section>
+
+            <section class="btn  dropdown-toggle" data-bs-toggle="dropdown"> <b>NON-VEG</b> </section>
+            <section class="dropdown-menu">
+             <section class="dropdown-item"><img src="https://www.oneindia.com/img/2020/03/nonveg-1583492545.jpg" alt="" width="250px"></section>
+             <section class="dropdown-item"><img class="rounded-circle" src="https://i.ytimg.com/vi/CIVBFsEyViQ/maxresdefault.jpg" alt="" width="50px"> chicken fried rice</section> 
+             <section class="dropdown-item"> chicken biryani</section>               
+             <section class="dropdown-item">chicken 65</section>              
+             <section class="dropdown-item">chicken fry</section>              
+             <section class="dropdown-item"> Dum briyani</section>
+         </section>
+
+         <section class="btn  dropdown-toggle" data-bs-toggle="dropdown"> <b>INDIAN</b> </section>
+         <section class="dropdown-menu">
+          <section class="dropdown-item"><img src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/08/Indian-Restaurants-In-Japan.jpg" alt="" width="250px"></section>
+          <section class="dropdown-item"><img class="rounded-circle" src="https://res.cloudinary.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/cetahkvrdg4quk6weyvy" alt="" width="50px">MEALS</section> 
+          <section class="dropdown-item"> brown rice</section>               
+          <section class="dropdown-item">tomato khichidi</section>              
+          <section class="dropdown-item">dal fry</section>              
+          <section class="dropdown-item"> veg briyani</section>
+      </section>
+
+      <section class="btn  dropdown-toggle" data-bs-toggle="dropdown"> <b>CHINESE</b> </section>
+      <section class="dropdown-menu">
+       <section class="dropdown-item"><img src="https://townsquare.media/site/393/files/2022/06/attachment-orijit-chatterjee-wEBg_pYtynw-unsplash.jpg?w=980&q=75" alt="" width="250px"></section>
+       <section class="dropdown-item"><img class="rounded-circle" src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/rdhyg6gntaqdrtup6pdm" alt="" width="50px"> noodles</section> 
+       <section class="dropdown-item"> Noodles</section>               
+       <section class="dropdown-item">burger</section>              
+       <section class="dropdown-item">pizaas</section>              
+       <section class="dropdown-item"> tandoori</section>
+       </section>
+    </section>
+ 
+  
+</header>
+
+<section class="container my-5 bg-white border border-dark" id="burgerimg">
+    <section>
+         <h1 id="weput" class="display-4 mx-5 text-white">
+           <b> We put your <br> restaurant’s <br> performance first.</b>
+         </h1>
+         <p id="optimize" class="h5 text-white mx-5 mt-5  " >
+            <b>Optimize operations and elevate dining <br> experiences with Chuyax.</b>
+         </p>
+    </section>
+ </section>
+
+ <section class="container my-5 ">
+    <section class="text-center my-3">
+        <b class="h1"> RESTAURANT INTERIOR</b>
+    </section>
+
+    <section class="carousel slide" id="one" data-bs-ride="carousel">
+        <section class="carousel-indicators">
+            <section class="bt btn-primary" data-bs-target="#one" data-bs-slide-to="0"></section>
+            <section class="btn btn-primary active" data-bs-target="#one" data-bs-slide-to="1"></section>
+            <section class="btn btn-primary" data-bs-target="#one" data-bs-slide-to="2"></section>
+            <section class="btn btn-primary" data-bs-target="#one" data-bs-slide-to="3"></section>
+            <section class="btn btn-primary" data-bs-target="#one" data-bs-slide-to="4"></section>
+        </section>
+
+        <section class="carousel-inner">
+           <section class="carousel-item">
+               <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2015/06/30/18/36/st-826688_960_720.jpg" alt="" >
+           </section>
+           <section class="carousel-item active">
+               <img class="d-block w-100 " src="https://cdn.pixabay.com/photo/2016/11/18/14/05/brick-wall-1834784_960_720.jpg" alt="">
+           </section>
+           <section class="carousel-item">
+               <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2017/03/27/14/21/chairs-2179044_960_720.jpg" alt="">
+           </section>
+           <section class="carousel-item">
+            <img class="d-block w-100" src="https://images.pexels.com/photos/1055058/pexels-photo-1055058.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+           </section>
+
+        
+
+           <section class="btn carousel-control-prev " data-bs-target="#one" data-bs-slide="prev">
+               <section class="carousel-control-prev-icon"></section>
+           </section>
+           <section class="btn carousel-control-next " data-bs-target="#one" data-bs-slide="next">
+               <section class="carousel-control-next-icon"></section>
+           </section>
+        </section>
+    </section>
+ </section>
+        <section>
+            <p class="h1 my-4 text-center">BROWSE CATEGORIES</p>
+        </section>
+     <section class="container d-flex justify-content-around flex-wrap  ">
+           
+        <section class="card" >
+             <aside class="card-header " >
+               <img id="chickenbuckets" src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT99.jpg?ver=21.46" alt="" width="250px">
+               <p class="h5 my-3 text-center">CHICKEN BUCKETS</p>
+             </aside>
+        </section>
+
+        <section class="card">
+            <aside class="card-header">
+                <img id="chickenbuckets" src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT158.jpg?ver=21.46" alt="" width="250px">
+                <p class="h5 my-3 text-center">BOX MEALS</p>
+            </aside>
+        </section>
+
+        <section class="card">
+            <aside class="card-header">
+                <img id="chickenbuckets" src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT190.jpg?ver=21.46" alt="" width="250px">
+                <p class="h5 my-3 text-center">BIRYANI BUCKETS</p>
+            </aside>
+        </section>
+
+        <section class="card">
+           <aside class="card-header">
+               <img id="chickenbuckets" src="https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/categories/CAT200.jpg?ver=21.46" alt="" width="250px">
+               <p class="h5 my-3 text-center">POPCORN</p>
+           </aside>
+        </section>
+     </section>
+           
+          <section>
+            <p class="h1 text-center my-5">DESSERTS & SHAKES</p>
+          </section>
+     <section class="container d-flex justify-content-around my-2 flex-wrap">
+
+        <section class="card">
+            <aside class="card-header">
+                <img id="chickenbuckets" src="https://s7d1.scene7.com/is/image/mcdonalds/t-oreo-mcflurry-snack:1-4-product-tile-desktop" alt="" width="250px">
+                <p class="h5 text-center">OREO COOKIES</p>
+            </aside>
+        </section>
+
+        <section class="card">
+            <aside class="card-header">
+                <img id="chickenbuckets" src="https://s7d1.scene7.com/is/image/mcdonalds/t-mcdonalds-Vanilla-Reduced-Fat-Ice-Cream-Cone:1-4-product-tile-desktop" alt="" width="250px">
+                <p class="h5 text-center">VANILA CONE</p>
+            </aside>
+        </section>
+
+        <section class="card">
+            <aside class="card-header">
+                <img id="chickenbuckets" src="https://s7d1.scene7.com/is/image/mcdonalds/t-mcdonalds-Hot-Fudge-Sundae:1-4-product-tile-desktop" alt="" width="250px">
+                <p class="h5 text-center">HOT FUDGE</p>
+            </aside>
+        </section>
+
+        <section class="card">
+            <aside class="card-header">
+                <img  id="chickenbuckets"  src="https://s7d1.scene7.com/is/image/mcdonalds/t-mcdonalds-Chocolate-McCafe-Shake-Medium-1:1-4-product-tile-desktop" alt="" width="250px">
+                <p class="h5 text-center">CHOCOLATE SHAKE</p>
+            </aside>
+        </section>
+     </section>
+         
+          <section>
+            <p class="h1 text-center my-5 ">TOP DEALS</p>
+          </section>
+     <section class="container d-flex justify-content-around flex-wrap">
+        <section class="card">
+           <section class="card-header">
+                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/y8ikoutwedxqphzdm3cm" alt="" width="250px">
+           </section>
+           <section class="card-header">
+                 <p class="h5">Dum Biryani</p>
+                 <p>Biryani, Chinese,<br> North Indian, South Indian,<br> Tandoor, Lebanese</p>
+                 <p class=" bg-success d-inline rounded px-3 text-light">4.3*</p>₹200 for two
+           </section>
+        </section>
+
+        <section class="card">
+            <section class="card-header">
+                 <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/rdhyg6gntaqdrtup6pdm" alt="" width="250px">
+            </section>
+            <section class="card-header">
+                  <p class="h5">Noodles</p>
+                  <p> Chinese, North Indian,<br> South Indian,<br> Tandoor, Lebanese</p>
+                  <p class=" bg-success d-inline rounded px-3 text-light">4.1*</p>₹350 for two
+            </section>
+         </section>
+
+
+         <section class="card">
+            <section class="card-header">
+                 <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/xsdat4khuyahmkevy27k" alt="" width="250px">
+            </section>
+            <section class="card-header">
+                  <p class="h5">Fry Biryani</p>
+                  <p>Biryani, Chinese, North Indian <br> continental <br> spl biryani </p>
+                  <p class="  d-inline rounded px-3" style="background-color:orange ;">3.5*</p> ₹300 for two
+            </section>
+         </section>
+
+
+         <section class="card">
+            <section class="card-header">
+                 <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/ttpqboplotm3luata1wc" alt="" width="250px">
+            </section>
+            <section class="card-header">
+                  <p class="h5">Spl Biryani</p>
+                  <p>Biryani, Chinese, North Indian,<br> South Indian,<br> Continental</p>
+                  <p class="  d-inline rounded px-3" style="background-color:orange ;">3.5*</p>₹250 for two
+            </section>
+         </section>
+     
+        </section>
+
+
+        <section class="d-flex justify-content-evenly my-5 flex-wrap ">
+            <section class="px-5 border  my-5">
+                <p class="h5 mt-3">Ratings and reviews</p>
+                <p> <b class="bg-success rounded d-inline px-3 mx-3 text-light ">5.0</b>  <b class="mx-3">901 reviews</b></p>
+                <p>#1 of 3 Restaurants in Visakhapatnam</p>
+                <p class="h6">Travellers' Choice</p>
+
+                <aside class="my-5">
+                    <p class="h6 my-3 mx-2">RATINGS</p>
+                    <p class=""><ion-icon class="mx-3" name="restaurant-outline"></ion-icon>Food <b class="bg-success rounded mx-5 px-3 text-light ">4.5*</b></p> 
+                    <p><ion-icon class="mx-3" name="fast-food-outline"></ion-icon>Service <b class="bg-success rounded mx-4 px-3 text-light ">4.8*</b></p>
+                    <p><ion-icon class="mx-3" name="cash-outline"></ion-icon>Value <b class="bg-success rounded mx-5 px-3 text-light ">4.2*</b></p>
+                </aside>
+
+            </section>
+
+            <section class="border  my-5">
+                <p class="h5 my-3 mx-2"> <b>Food and ambience</b></p>
+                <p class="h6 my-3 mx-2">Local cuisine, Chinese, Indian, Bar, Asian, <br> Vegetarian  Friendly</p>
+                <p class="h6 my-3 mx-2">“Yummy curd rice with cashews and pomegranate”</p>
+                <p class="h6 my-3 mx-2">“Some dishes like chicken snowball's, drums of <br> heaven, dolphin special biryani...”</p>
+                <p class="h6 my-3 mx-2">“... flover is very nice mutton rogan curry very tasty <br> varieties of sweets won...”</p>
+                <p class="h6 my-3 mx-2">“The love shaped dessert very attractive. <br> Prawn curry mutton rogonjosh in the p...”</p>
+            </section>
+
+            <section class="border  my-5">
+                <p class="h4 mx-3 my-3">Location and Contact</p>
+                <aside class="mx-3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3801.08002248402!2d83.00740741488065!3d17.693679487895796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3970deccd0d68b%3A0xc6eee953698cdd6b!2sRing%20Rd%2C%20Anakapalle%2C%20Andhra%20Pradesh%20531001!5e0!3m2!1sen!2sin!4v1667551602271!5m2!1sen!2sin" width="250px" height="200px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </aside>
+                <aside class="my-3 mx-3">
+                    <ion-icon name="location"></ion-icon><a class="text-dark " href="">Ring Road, Ring Road Rd 7th Floor,<br> Chuyax restaurant Anakapalle, Visakhapatnam <br> 530020 India</a>
+                </aside>
+                <aside class=" mx-3 my-3">
+                    <ion-icon name="tv-outline"></ion-icon><a class="text-dark " href="">website</a>
+                    <ion-icon name="mail-outline"></ion-icon><a class="text-dark " href=""> mail</a>
+                </aside>
+                <aside class="mx-3">
+                    <ion-icon name="call-outline"></ion-icon>+91 7995356579
+                </aside>
+
+            </section>
+        </section>
+
+        <footer class="coainer-fluid d-flex justify-content-around flex-wrap" style="background-color: rgba(98, 154, 176, 0.481);">
+            <section>
+                <img src="./chuyax_logo-removebg-preview.png" alt="" width="250px">
+            </section>
+
+            <section class="my-5">
+                <b class="">
+                    <h3 class="text-dark">About Us</h3>
+                    Our History <br>
+                    Leadership Team <br>
+                    Values In Action<br>
+                    Franchise Info<br>
+                    Recalls & Alerts<br>
+                    Real Estate<br>
+                    Digital Accessibility<br>
+                    Investor Relations<br>
+                    News & Notifications
+                </b>
+            </section>
+
+            <section class="my-5">
+                <b>
+                    <h3>Services</h3>
+                    Services Overview <br>
+                    Wi-Fi <br>
+                    Gift Cards <br>
+                    PlayPlaces & Parties <br>
+                    Mobile Order & Pay <br>
+                    Trending Now <br>
+                    Family Fun Hub <br>
+                    Rewards 
+                    
+                </b>
+            </section>
+
+            <section class="my-5">
+            <b>
+                <h3>Contact</h3>
+                Help & Support <br>
+                Partner with us <br>
+                Ride with us <br>
+            </b>
+            </section>
+
+            <section class="my-5">
+                <aside >
+                    <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200,h_65/icon-AppStore_lg30tv" alt="">
+                </aside>
+               <aside class="my-3">
+                <img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200,h_65/icon-GooglePlay_1_zixjxl" alt="">
+               </aside>
+            </section>
+        </footer>
+    
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>
